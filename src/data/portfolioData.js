@@ -31,7 +31,7 @@ export const PROBLEM_SOLVING_SUMMARY = {
   summaryLine:
     "Solved 549 DSA problems (204 Easy, 306 Medium, 39 Hard), 131 competitive programming problems across CodeChef & Codeforces, and 34 fundamentals (GFG & HackerRank) primarily in C++ and Java.",
   ratingLine:
-    "Contest ratings: LeetCode 1718 (20 contests, Weekly Contest 527 rank 2,430) • CodeChef 1401 (peak 1413, 18 contests) • Codeforces 1029 (peak 1062, 8 contests) • AtCoder 247 (6 contests) • 13 platform awards.",
+    "13 platform awards earned across 464 recent submissions (May–Nov 2026) and consistent contest participation.",
 };
 
 export const PROJECTS = [
@@ -118,21 +118,28 @@ export const SKILL_GROUPS = [
   },
 ];
 
-export const EXPERIENCE = [
+export const ACHIEVEMENTS = [
   {
-    period: "Jun 2025 – Jul 2025",
-    title: "Software Development Intern",
-    org: "Codesoft (Remote)",
+    period: "Contest Ratings",
+    title: "Competitive Programming Platform Ratings",
+    org: "LeetCode • CodeChef • Codeforces • AtCoder",
     summary:
-      "Built responsive web interfaces and modular JavaScript features with clean API integration and form validation.",
+      "LeetCode: 1718 (max 1718, 20 contests, Weekly 527 rank 2,430) • CodeChef: 1401 (max 1413, 2★, 18 contests) • Codeforces: 1029 (max 1062, Newbie, 8 contests) • AtCoder: 247 (6 contests).",
   },
   {
-    period: "Workshop",
-    title: "Nation Skillup DSA Workshop",
-    org: "GeeksforGeeks",
+    period: "College Competition",
+    title: "Codathon Final Round",
+    org: "Organized at NIET on CodeTantra",
     summary:
-      "Completed an offline hands-on DSA workshop led by Sandeep Jain covering problem-solving patterns and complexity optimization.",
-    link: "https://drive.google.com/file/d/1yEYvO9yzMJVyH1b0qorHJ5PF82CU2dj-/view?usp=sharing",
+      "Qualified for the Final Round of the college-level Codathon coding competition hosted on the CodeTantra platform.",
+    link: "https://docs.google.com/presentation/d/1oZSzRNRH96S110clC-zdSSmOjijJF9zuoJuAKtLiOxo/edit?usp=sharing",
+  },
+  {
+    period: "National Hackathon",
+    title: "Adobe Hackathon — Round 2",
+    org: "Adobe Systems",
+    summary:
+      "Selected for Round 2 of the Adobe Hackathon based on algorithmic problem solving and system round performance.",
   },
 ];
 
@@ -162,13 +169,9 @@ export const CERTIFICATIONS = [
     detail: "takeUforward — Data Structures & Algorithms",
   },
   {
-    title: "Adobe Hackathon — Round 2",
-    detail: "Selected for Round 2 problem-solving & system round",
-  },
-  {
-    title: "Codathon Final Round",
-    detail: "NIET Competitive Programming Finalist",
-    link: "https://docs.google.com/presentation/d/1oZSzRNRH96S110clC-zdSSmOjijJF9zuoJuAKtLiOxo/edit?usp=sharing",
+    title: "Nation Skillup DSA Workshop",
+    detail: "GeeksforGeeks Offline Workshop led by Sandeep Jain",
+    link: "https://drive.google.com/file/d/1yEYvO9yzMJVyH1b0qorHJ5PF82CU2dj-/view?usp=sharing",
   },
   {
     title: "IDEAHACK 2.0",

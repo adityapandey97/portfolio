@@ -1,20 +1,20 @@
 import { ExternalLink } from "lucide-react";
-import { CERTIFICATIONS, EDUCATION, EXPERIENCE } from "../data/portfolioData";
+import { ACHIEVEMENTS, CERTIFICATIONS, EDUCATION } from "../data/portfolioData";
 
 export default function Background() {
   return (
-    <section id="background" className="page-section alt-bg">
+    <section id="achievements" className="page-section alt-bg">
       <div className="container">
         <div className="section-heading">
-          <span className="section-label">05 / Background</span>
-          <h2 className="section-title">Experience, Education &amp; Credentials</h2>
+          <span className="section-label">05 / Achievements &amp; Education</span>
+          <h2 className="section-title">Achievements, Education &amp; Credentials</h2>
         </div>
 
         <div className="two-col">
           <div>
-            <h3 className="sub-heading">Experience &amp; Training</h3>
+            <h3 className="sub-heading">Achievements</h3>
             <div className="entry-list">
-              {EXPERIENCE.map((item) => (
+              {ACHIEVEMENTS.map((item) => (
                 <div key={item.title} className="entry-item">
                   <span className="entry-period">{item.period}</span>
                   <h4 className="entry-title">{item.title}</h4>
@@ -28,7 +28,7 @@ export default function Background() {
                       className="text-link"
                       style={{ marginTop: "4px" }}
                     >
-                      <span>View Certificate</span>
+                      <span>View Presentation</span>
                       <ExternalLink size={13} />
                     </a>
                   )}
