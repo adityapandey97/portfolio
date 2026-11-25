@@ -1,0 +1,272 @@
+/* ==========================================================================
+   RESPONSIVE DESIGN SYSTEM
+   Breakpoints: 320px, 375px, 425px, 768px, 1024px, 1280px, 1440px, 1920px
+   No horizontal overflow, fluid scaling, mobile navigation drawer
+   ========================================================================== */
+
+/* --- 1. LARGE SCREENS & DESKTOPS (1440px - 1920px+) --- */
+@media (min-width: 1440px) {
+    :root {
+        --max-width: 1320px;
+    }
+    .hero-title {
+        font-size: 4rem;
+    }
+}
+
+/* --- 2. LAPTOPS & DESKTOPS (1024px - 1280px) --- */
+@media (max-width: 1200px) {
+    .analytics-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 18px;
+    }
+    .rating-grid.rating-grid-4 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .repos-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .skills-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .quick-stats-row {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 14px;
+    }
+}
+
+/* --- 3. TABLETS & SMALL LAPTOPS (769px - 1023px) --- */
+@media (max-width: 1024px) {
+    .hero-grid {
+        grid-template-columns: 1fr;
+        gap: 36px;
+    }
+    .hero-content {
+        order: 1;
+    }
+    .hero-visual {
+        order: 2;
+    }
+    .dev-terminal {
+        max-width: 100%;
+    }
+    .analytics-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+    .charts-grid {
+        grid-template-columns: 1fr;
+    }
+    .telemetry-summary-card {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .telemetry-left {
+        border-right: none;
+        border-bottom: 1px solid var(--border-subtle);
+        padding-right: 0;
+        padding-bottom: 16px;
+    }
+    .dual-timeline-grid {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+    .certs-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .about-grid {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+    .about-photo-wrapper {
+        max-width: 320px;
+        margin: 0 auto;
+    }
+}
+
+/* --- 4. TABLETS (768px) --- */
+@media (max-width: 768px) {
+    :root {
+        --nav-height: 64px;
+    }
+
+    .nav-links {
+        display: none;
+    }
+    .nav-cmd-btn {
+        display: none;
+    }
+    .search-container {
+        display: none;
+    }
+    .mobile-menu-btn {
+        display: flex;
+    }
+
+    .hero-title {
+        font-size: 2.75rem;
+    }
+
+    .quick-stats-row {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 14px;
+    }
+
+    .analytics-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .repos-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .certs-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .dashboard-control-bar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .rating-grid,
+    .rating-grid.rating-grid-4 {
+        grid-template-columns: 1fr;
+    }
+
+    .telemetry-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .github-overview-card {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .gh-stats-row {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .contact-container-card {
+        padding: 36px 20px;
+    }
+
+    .contact-title {
+        font-size: 1.85rem;
+    }
+
+    .section {
+        padding: 60px 0;
+    }
+}
+
+/* --- 5. MOBILE PHONES (375px - 425px) --- */
+@media (max-width: 480px) {
+    .container {
+        padding: 0 16px;
+    }
+
+    .hero-title {
+        font-size: 2.2rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.05rem;
+    }
+
+    .hero-actions {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .hero-actions .btn {
+        width: 100%;
+    }
+
+    .quick-stats-row {
+        grid-template-columns: 1fr;
+    }
+
+    .repos-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .donut-chart-wrapper {
+        flex-direction: column;
+    }
+
+    .platform-stats-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-email-box {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .modal-container {
+        max-height: 95vh;
+    }
+
+    .modal-header, .modal-body, .modal-footer {
+        padding: 16px;
+    }
+
+    .modal-actions {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .footer-top {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+/* --- 6. SMALL MOBILES (320px) --- */
+@media (max-width: 340px) {
+    .hero-title {
+        font-size: 1.95rem;
+    }
+    .metric-number {
+        font-size: 1.6rem;
+    }
+    .brand-name {
+        font-size: 0.95rem;
+    }
+    .btn {
+        padding: 10px 16px;
+        font-size: 0.85rem;
+    }
+}
+
+/* --- 7. HERO SHOWCASE & PROFILE CARD RESPONSIVENESS --- */
+@media (max-width: 520px) {
+    .hero-showcase-container {
+        max-width: 100%;
+    }
+    .hero-avatar-wrapper {
+        width: 165px;
+        height: 165px;
+    }
+}
